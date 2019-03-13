@@ -5,8 +5,86 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="header-page">
+      <a class="header-page__logo">
+        <img class="header-page__logo-image" src="img/logotype-mobile.svg" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Приложение для обработки фотографий "Пинк"</h1>
+      <section class="application">
+        <h2 class="visually-hidden">Наше приложение</h2>
+        <p class="application__wrapper-image">
+          <img class="application__image" src="img/iphone.png" width="512" height="316" alt="Телефон с приложением">
+        </p>
+        <div class="application__download download">
+          <p class="download__intro">Взгляните на жизнь иначе!</p>
+          <a class="download__link" href="#">Скачать приложение</a>
+          <ul class="download__list device">
+            <li class="device__item">
+              <a class="device__link device__link--ios" href="#">
+                <span class="visually-hidden">скачать приложение для IOS</span>
+              </a>
+            </li>
+            <li class="device__item">
+              <a class="device__link device__link--android" href="#">
+                <span class="visually-hidden">скачать приложение для Android</span>
+              </a>
+            </li>
+            <li class="device__item">
+              <a class="device__link device__link--widdows" href="#">
+                <span class="visually-hidden">скачать приложение для Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="advantage">
+        <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+        <div class="advantage__header">
+          <p class="advantage__cause">Устали от серости мегаполиса?</p>
+          <p class="advantage__cause">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="advantage__offer offer__list">
+          <li class="offer-item">
+            <h3 class="offer__title">Поднимает настроение</h3>
+            <p class="offer-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="offer-item">
+            <h3 class="offer__title">Меняет мир вокруг</h3>
+            <p class="offer-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="offer-item">
+            <h3 class="offer__title">Заводит новых друзей</h3>
+            <p class="offer-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="research">
+          <h3 class="research__title">Эффект на 24 часа!</h3>
+          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link">Узнать больше об исследовании</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
