@@ -1,0 +1,38 @@
+.reviews {
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+
+  line-height: 30px;
+}
+
+.reviews__author {
+  margin-bottom: 13px;
+}
+
+.reviews__name {
+  margin: 0;
+
+  color: #000000;
+  font-weight: 700;
+}
+
+.reviews__age {
+  display: none;
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 14px;
+}
+
+.reviews__button {
+  display: none;
+}

@@ -1,0 +1,15 @@
+.application__background {
+  width: 100%;
+  min-height: 462px;
+
+  background-color: #1d2631;
+  background-image: url('/img/iphone-hand-mobile@1x.png'), url('/img/bg-back-mobile@1x.jpg');
+  background-position: calc(50% - 20px) bottom,center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 100%;
+}
+
+.application__download {
+  padding: 0 20px;
+  padding-top: 28px;
+}

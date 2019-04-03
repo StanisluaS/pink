@@ -1,0 +1,21 @@
+.header-page {
+  position: absolute;
+
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-page__logo {
+  display: block;
+  width: 75px;
+  height: 23px;
+}

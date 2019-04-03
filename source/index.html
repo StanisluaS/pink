@@ -2,54 +2,58 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-page">
-      <a class="header-page__logo">
-        <img class="header-page__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип сайта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__button" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list menu-list">
-            <li class="menu-list__item menu-list__item--active">
-              <a class="menu-list__link">Главная</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header-page-wrapper">
+        <a class="header-page__logo">
+          <img class="header-page__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип сайта">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list menu-list">
+              <li class="menu-list__item menu-list__item--active">
+                <a class="menu-list__link">Главная</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Приложение для обработки фотографий "Пинк"</h1>
-      <section class="application">
+      <section class="main-page__application application">
         <h2 class="visually-hidden">Наше приложение</h2>
-        <p class="application__image"></p>
+        <div class="application__background"></div>
         <div class="application__download download">
           <p class="download__intro">Взгляните на жизнь иначе!</p>
           <a class="download__link" href="#">Скачать приложение</a>
-          <ul class="download__list device">
-            <li class="device__item">
-              <a class="device__link device__link--ios" href="#">
+          <ul class="download__list-icon">
+            <li class="download__item-icon">
+              <a class="download__link-icon download__link-icon--ios" href="#">
                 <span class="visually-hidden">скачать приложение для IOS</span>
               </a>
             </li>
-            <li class="device__item">
-              <a class="device__link device__link--android" href="#">
+            <li class="download__item-icon download__item-icon--android">
+              <a class="download__link-icon download__link-icon--android" href="#">
                 <span class="visually-hidden">скачать приложение для Android</span>
               </a>
             </li>
-            <li class="device__item">
-              <a class="device__link device__link--widdows" href="#">
+            <li class="download__item-icon download__item-icon--widdows">
+              <a class="download__link-icon download__link-icon--widdows" href="#">
                 <span class="visually-hidden">скачать приложение для Windows</span>
               </a>
             </li>
@@ -57,48 +61,54 @@
           <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-      <section class="advantage">
+      <section class="main-page__advantage advantage">
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
         <div class="advantage__header">
           <p class="advantage__cause">Устали от серости мегаполиса?</p>
           <p class="advantage__cause">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="advantage__offer offer__list">
-          <li class="offer-item offer-item--mood">
-            <h3 class="offer__title">Поднимает настроение</h3>
-            <p class="offer-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="offer-item offer-item--like">
-            <h3 class="offer__title">Меняет мир вокруг</h3>
-            <p class="offer-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="offer-item offer-item--friend">
-            <h3 class="offer__title">Заводит новых друзей</h3>
-            <p class="offer-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="research">
-          <h3 class="research__title">Эффект на 24 часа!</h3>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="research__link">Узнать больше об исследовании</a>
+        <div class="advantage__wrapper">
+          <ul class="advantage__list">
+            <li class="advantage-item advantage-item--mood">
+              <h3 class="advantage__title">Поднимает настроение</h3>
+              <p class="advantage-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantage-item advantage-item--like">
+              <h3 class="advantage__title">Меняет мир вокруг</h3>
+              <p class="advantage-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantage-item advantage-item--friend">
+              <h3 class="advantage__title">Заводит новых друзей</h3>
+              <p class="advantage-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section class="research">
+        <h3 class="research__title">Эффект на 24 часа!</h3>
+        <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="research__link">Узнать больше об исследовании</a>
+      </section>
+      <section class="main-page__reviews reviews">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">
-                <b class="reviews__name">Николай Петров</b>
-                <span class="reviews__age">25 лет, водитель трамвая</span>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </cite>
+              <div class="reviews__author">
+                <p class="reviews__name">
+                  Николай Петров
+                </p>
+                <p class="reviews__age">
+                  25 лет, водитель трамвая
+                </p>
+              </div>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <button class="reviews__prev" type="button">
+          <button class="reviews__button reviews__button--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="reviews__next" type="button">
+          <button class="reviews__button reviews__button--next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
           <p class="reviews__toggles slider__toggles">
@@ -119,18 +129,18 @@
         <div class="tariff__wrapper slider">
           <table class="tariff__table">
             <tr>
-              <th class="visually-hidden"></th>
+              <th class="visually-hidden tariff__row-name"></th>
               <th class="tariff__name">
-                База
-                <span class="tariff__price">1,99 USD</span>
+                <p class="tariff__name-text">База</p>
+                <p class="tariff__price">1,99 USD</p>
               </th>
               <th class="tariff__name tariff__name--hit">
-                Стандарт
-                <span class="tariff__price">3,99 USD</span>
+                <p class="tariff__name-text">Стандарт</p>
+                <p class="tariff__price">3,99 USD</p>
               </th>
               <th class="tariff__name">
-                Анлим
-                <span class="tariff__price">9,99 USD</span>
+                <p class="tariff__name-text">Анлим</p>
+                <p class="tariff__price">9,99 USD</p>
               </th>
             </tr>
             <tr>
@@ -198,11 +208,11 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <b class="contacts__title">Звоните:</b>
-            <a class="contacts__text" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
+            <a class="contacts__text contacts__text--link" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Пишите:</b>
-            <a class="contacts__text" href="mailtomail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__text contacts__text--link" href="mailtomail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Приезжайте в гости:</b>
@@ -211,7 +221,8 @@
         </ul>
       </section>
       <div class="map">
-        <img src="http://placehold.it/150x100"  width="320" height="645" alt="Карта проезда">
+        <p class="map__background"></p>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1554328419134!5m2!1sru!2sby" width="1200" height="500" style="border:0" allowfullscreen></iframe>
       </div>
     </main>
     <footer class="footer-page">
@@ -244,5 +255,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
